@@ -56,7 +56,8 @@ Starts the server using the Http obj and assigns it to `server`.
 2. __App.js__
 
 __Description :__
-_Javascript file that handles incoming requests and retruns responses. Makes use of Express `const app = express()` 
+
+Javascript file that handles incoming requests and retruns responses. Makes use of Express `const app = express()` 
 
 __Code :__
 
@@ -78,6 +79,27 @@ The third argument can have different formats of arguments. It can be a normal
 module.exports = app;
 ```
 Exports `app` so that it can be used by other files 
+
+3. __Product.js__
+
+__Description :__
+
+Javascript file that handles requests to different specified routes. 
+
+__Code :__
+
+```javascript
+router.get('/:productId',(req, res, next) => {
+    const productId = req.params.productId;
+    res.status(200).json({
+        message : 'Handling get request with productId on /products'
+        
+    });
+});
+```
+This handles requests with a `productId` parameter attached to it
+
+
 
 
 
