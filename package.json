@@ -1,0 +1,22 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "First RESTful API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibaqu/RESTApi_Repo.git"
+  },
+  "author": "Ibaqu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibaqu/RESTApi_Repo/issues"
+  },
+  "homepage": "https://github.com/Ibaqu/RESTApi_Repo#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
